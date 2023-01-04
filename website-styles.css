@@ -85,11 +85,11 @@
                 padding: 10px;
             }
         .welcome-section {
-            background-image: url(../images/projectPics/p4-banner.png);
+            background-image: url(projectPics/p4-banner.png);
             padding: 30px;
         }
         .covered-section {
-            background-image: url(../images/projectPics/i2-banner.png);
+            background-image: url(projectPics/i2-banner.png);
             padding: 30px;
         }
         .welcome {
@@ -222,7 +222,7 @@
             display: flex;
             justify-content: center;
             font-size: 30px;
-            background-image: url(../images/projectPics/our-story-banner.png);
+            background-image: url(projectPics/our-story-banner.png);
             color: #ffffff;
             padding: 120px;
         }
@@ -260,7 +260,7 @@
                 display: flex;
                 justify-content: center;
                 font-size: 30px;
-                background-image: url(../images/projectPics/ourHouseBanner_500x250.jpeg);
+                background-image: url(projectPics/ourHouseBanner_500x250.jpeg);
                 color: #ffffff;
                 padding: 120px;
             }

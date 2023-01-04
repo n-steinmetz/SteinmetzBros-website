@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steinmetz Bros Portfolio</title>
+    <link rel="stylesheet" href="website-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="projectPics/favicon.ico">
+    <link rel="stylesheet" href="website-styles.css">
+    <script src="website-javascript.js"></script>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="title"><img class="logoHeader" src="projectPics/sb-Header.png" alt="Steinmetz Bros Logo"></div>
+        <nav>
+            <div class="navs">
+                <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </div>
+</header>
+    <div class="section1">
+        <div class="portfolio">
+            <h2 class="portTitle">Portfolio</h2>
+            <p>Below are some examples of what we do.</p>
+        </div>
+    </div>
+    <div class="mainflex">
+        <div class="row1">
+            <div> <img src="projectPics/IMG_1131.jpeg" alt="house_photo"></div>
+            <div><img src="projectPics/STNMTZ_20160714_02261.jpeg" alt="Photo of a house"></div>
+        </div>
+        <div class="row2">
+            <div><img src="projectPics/376+Ridgewood.jpeg" alt="house_photo"></div>
+            <div><img src="projectPics/STNMTZ_20170507_2620_.jpeg" alt="Photo of a house"></div>
+            <div><img src="projectPics/DJI_0087-2.jpeg" alt="Photo of a house"></div>
+        </div>
+        <div class="row3">
+            <div><img src="projectPics/STNMTZ_20170430_114.jpeg" alt="house_photo"></div>
+            <div><img src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="house_photo"></div>
+        </div>
+        <div class="row4">
+            <div><img src="projectPics/STNMTZ_20170506_2412_.jpeg" alt="house_photo"></div>
+            <div><img src="projectPics/IMG_1135.jpeg" alt="Photo of a house"></div>
+            <div><img src="projectPics/STNMTZ_20160525_00211.jpg" alt="Photo of a house"></div>
+        </div>
+        <div class="row5">
+            <div class="video-container">
+                <video width="1000" height="750" controls>
+                <source src="projectPics/forestAve-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div><img src="projectPics/DJI_0046.jpeg" alt="Photo of a house"></div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div id="slide1" class="mySlides fade">
+          <img class="image1" src="projectPics/DJI_0130.jpeg" alt="arial view of a house" onload="image1Off();">
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="image2" src="projectPics/STNMTZ_20160714_02629.jpeg" alt="arial view of a house" >
+        </div>
+        
+        <div class="mySlides fade">
+          <img class="image3" src="projectPics/STNMTZ_20160714_02620+copy.jpeg" alt="arial view of a house">
+        </div>
+        
+        <div class="mySlides fade">
+            <img class="image4" src="projectPics/209+Ridgewood+back.jpeg" alt="arial view of a house" >
+          </div>
+        
+          <div class="mySlides fade">
+            <img class="image5" src="projectPics/STNMTZ_20170430_003.jpeg" alt="arial view of a house" >
+          </div>
+        
+          <div class="mySlides fade">
+            <img class="image6" src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="arial view of a house" >
+          </div>
+
+          <div class="mySlides fade">
+            <img class="image7" src="projectPics/428+Ridgewood.jpeg" alt="arial view of a house" >
+          </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        <div id="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        <div class="thumbnails">
+          <img src="projectPics/DJI_0130.jpeg" alt="house" class="thumbnail" onclick="currentSlide(1)">
+          <img src="projectPics/STNMTZ_20160714_02629.jpeg" alt="house" class="thumbnail" onclick="currentSlide(2)">
+          <img src="projectPics/STNMTZ_20160714_02620+copy.jpeg" alt="house" class="thumbnail" onclick="currentSlide(3)">
+          <img src="projectPics/209+Ridgewood+back.jpeg" alt="house" class="thumbnail" onclick="currentSlide(4)">
+          <img src="projectPics/STNMTZ_20170430_003.jpeg" alt="house" class="thumbnail" onclick="currentSlide(5)">
+          <img src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="house" class="thumbnail" onclick="currentSlide(6)">
+          <img src="projectPics/428+Ridgewood.jpeg" alt="house" class="thumbnail" onclick="currentSlide(7)">
+        </div>
+    <div class="footer">
+        <div class="footertop">
+            <div class="logo">
+                <img src="projectPics/SBlogo.png" alt="house_photo" class="sblogo">
+            </div>
+            <div class="info">
+                <div class="infol1">Steinmetz Brothers Drone Photography</div>
+                <div class="infol2">190 Linden Ave</div>
+                <div class="infol3">Glen Ridge, NJ</div>
+                <div class="infol4">07028</div>
+            </div>
+        </div>
+        <div class="footerbot">
+            <div class=gttbutton>
+                <div class="gototop">
+                    <button onclick="topFunction()" class="gttbutton" title="Go to top">Go to Top</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
