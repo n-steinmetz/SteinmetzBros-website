@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steinmetz Bros Home</title>
+    <link rel="stylesheet" href="website-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/projectPics/favicon.ico">
+    <script src="website-javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="title"><img class="logoHeader" src="../images/projectPics/sb-Header.png" alt="Steinmetz Bros Logo"></div>
+            <nav>
+                <div class="navs">
+                    <a href="skeleton_site_pg1.html">Home</a>
+                    <a href="skeleton_site_pg2.html">About Us</a>
+                    <a href="skeleton_site_pg3.html">Portfolio</a>
+                    <a href="contact_page.html">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="contactFlex">
+            <div class="smallImage">
+                <img src="../images/projectPics/209-Ridgewood.jpeg" class="contactIMG" alt="family portrait in front of their house">
+            </div>
+            <div class="formFlex">
+                <br><h1>Contact Us:</h1><br><br>
+                <form action="https://formspree.io/f/mbjwaobz" method="post">
+                    <div>
+                        <div>
+                            <label for="name1">Name:</label>
+                        </div>
+                        <div class="nameBtn">
+                            <input type="text" id="name1" name="name" class="name" placeholder="First Name" required>
+                            <input type="text" id="name2" name="name" class="name" placeholder="Last Name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="subject">Subject:</label>
+                        </div>
+                        <div>
+                            <input type="text" name="subject" id="subject" required>
+                        </div>
+                    </div>  
+                    <div>
+                        <div>
+                            <label for="email">Email:</label>
+                        </div>
+                        <div>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="message">Your Message:</label>
+                        </div>
+                        <div>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="submitBtn">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="infoFlex">
+                <h2>Contact Info:</h2>
+                <div>Phone:201-306-2321</div><br>
+                <div>Email: GRPhotoHP@gmail.com</div><br>
+                <div class="bigImage">
+                    <img src="../images/projectPics/209-Ridgewood.jpeg" class="contactIMG" alt="family portrait in front of their house">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footertop">
+            <div class="logo">
+                <img src="../images/projectPics/SBlogo.png" class="sblogo" alt="house_photo">
+            </div>
+            <div class="info">
+                <div class="infol1">Steinmetz Brothers Drone Photography</div>
+                <div class="infol2">190 Linden Ave</div>
+                <div class="infol3">Glen Ridge, NJ</div>
+                <div class="infol4">07028</div>
+            </div>
+        </div>
+        <div class="footerbot">
+            <div class=gttbutton>
+                <div class="gototop">
+                    <button onclick="topFunction()" class="gttbutton" title="Go to top">Go to Top</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
