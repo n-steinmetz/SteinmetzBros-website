@@ -30,6 +30,31 @@
             padding: 5px;
             text-decoration: none;
         }
+        .welcome, .covered {
+            position: relative;
+            text-align: center;
+            color: #ffffff;
+        }
+        .welcome img, .covered img {
+            max-width: 100%;
+        }
+        .centered2, .centered3 {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5vw;
+        }
+        .centeredText2, .centeredText3 {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2vw;
+        }
+        .centeredText2 a, .centeredText3 a {
+            color: #ffffff;
+        }
         .images1, .images2, .leftflex, .leftflex2 {
             display: flex;
             flex-wrap: wrap;
@@ -76,31 +101,6 @@
                 padding: 18px;
             }
         }
-        .welcome-section, .covered-section {
-                flex-wrap: wrap;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                color: #ffffff;
-                padding: 10px;
-            }
-        .welcome-section {
-            background-image: url(projectPics/p4-banner.png);
-            padding: 30px;
-        }
-        .covered-section {
-            background-image: url(projectPics/i2-banner.png);
-            padding: 30px;
-        }
-        .welcome {
-            padding-right: 85px;
-            padding-left: 85px;
-        }
-        .welcome-section a, .covered-section a {
-            display: flex;
-            justify-content: center ;
-            color: #ffffff;
-        }
         .footertop {
             display: flex;
             background-color: rgb(13, 13, 85);
@@ -111,7 +111,6 @@
             display: flex;
             justify-content: flex-end;
             padding: 5px;
-            text-align: ;
         }
         .sblogo {
             padding: 10px;
@@ -209,11 +208,10 @@
         }
         .centered {
             position: absolute;
-            top: 40%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 70px;
-            text-shadow: rgb(13, 13, 85) 0 0 5px;
+            font-size: 60px;
         }
         .aboutUs img {
             max-width: 100%;
@@ -316,7 +314,7 @@
 
         /* Slideshow container */
         .slideshow-container {
-        max-width: 1500px;
+        max-width: 1050px;
         position: relative;
         margin: auto;
         padding: 40px;
@@ -457,7 +455,7 @@
         .smallImage{
             display: none;
         }
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 1000px) {
             .contactFlex {
                 display: inline-block;
             }
