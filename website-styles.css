@@ -110,6 +110,7 @@
         .infol1, .infol2, .infol3, .infol4 {
             display: flex;
             justify-content: flex-end;
+            text-align: end;
             padding: 5px;
         }
         .sblogo {
