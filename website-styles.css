@@ -433,6 +433,8 @@
             max-width: 100%;
         }
         .infoFlex, .formFlex {
+            color: rgb(13, 13, 85);
+            text-decoration: none;
             padding: 20px;
         }
         .submitBtn {
