@@ -297,11 +297,14 @@
                 height: 2px;
                 transition: .5s ease-in-out;
                 }
-            .centered3, .centered4 {
-                top: 20%;
+            .centered3{
+                top: 25%;
+            }
+            .centered4 {
+                top: 10%;
             }
             .gttbutton {
-                width: 100px;
+                width: 150px;
             }
         }
         @media only screen and (max-width: 800px) {
