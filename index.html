@@ -8,30 +8,48 @@
     <link rel="stylesheet" href="website-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="projectPics/favicon.ico">
     <script src="website-javascript.js"></script>
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="title"><img class="logoHeader" src="projectPics/sb-Header.png" alt="Steinmetz Bros Logo"></div>
-            <nav>
-                <div class="navs">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+        <div class="headerContainer">
+            <div class="header3">
+                <img src="projectPics/STNMTZ_20160714_02620+copy copy.jpeg" class="headerImage" alt="We got you covered banner">
+                <a href="index.html"><img class="headerLogo" src="projectPics/sb-header.png" alt=""></a>
+                <nav class="menu2">
+                    <a class="menu__item" href="index.html"><span>Home</span></a>
+                    <a class="menu__item menu__item--current" href="about.html"><span>About</span></a>
+                    <a class="menu__item" href="portfolio.html"><span>Portfolio</span></a>
+                    <a href="contact.html" class="menu__item"><span>Contact</span></a>
+                </nav>
+                <label class="ham-menu">
+                    <input type="checkbox">
+                    <span class="menu"> 
+                        <span class="hamburger"></span>
+                    </span>
+                    <ul>
+                      <li> <a href="index.html">Home</a> </li>
+                      <li> <a href="about.html">About</a> </li>
+                      <li> <a href="portfolio.html">Portfolio</a> </li>
+                      <li> <a href="contact.html">Contact</a> </li>
+                    </ul>
+                </label>
+            </div>
         </div>
     </header>
     <section>
         <div class="welcome-section">
             <div class="welcome">
-                <img src="projectPics/welcome-banner.jpg" class="welcomeImage" alt="arieal view of a house">
+                <img src="projectPics/white-background.png" alt="white">
                 <h2 class="centered2">Welcome!</h2>
-                <p class="centeredText2">We are Nick and John Steinmetz, drone specialists for hire. With five years of experience as FAA licensed drone pilots, we have photographed over 500 homes. <br> <a href="about.html">Click here to learn more about us!</a></p>  
+                <p class="centeredText2">
+                    We are Nick and John Steinmetz, drone specialists for hire. With five years of experience as FAA licensed drone pilots, we have photographed over 500 homes. 
+                </p>  
+                <button class="about-btn">
+                    <a class="about-link" href="about.html">Click here to learn more about us!</a>
+                </button>
             </div>
         </div>
         <div class="images1">
@@ -53,9 +71,12 @@
     <section>
         <div class="covered-section">
             <div class="covered">
-                <img src="projectPics/covered-banner.jpg" class="coveredImage" alt="We got you covered banner">
+                <img src="projectPics/covered-banner.png" class="coveredImage" alt="We got you covered banner">
                 <h2 class="centered3">We Got You Covered!</h2>
-                <p class="centeredText3">Steinmetz Bros is a one stop shop for all your aerial photography needs. From photo to video we have experience working with home owners, realtors, and architects.<br><a href="portfolio.html">Click here to view our Portfolio</a></p>
+                <p class="centeredText3">Steinmetz Bros is a one stop shop for all your aerial photography needs. From photo to video we have experience working with home owners, realtors, and architects.</p>
+                <button class="covered-btn">
+                    <a class="covered-link" href="portfolio.html">Click here to view our portfolio</a>
+                </button>
             </div>
         </div>
         <div class="images2">

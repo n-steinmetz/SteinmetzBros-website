@@ -8,31 +8,43 @@
     <link rel="stylesheet" href="website-styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="projectPics/favicon.ico">
     <script src="website-javascript.js"></script>
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="title"><img class="logoHeader" src="projectPics/sb-Header.png" alt="Steinmetz Bros Logo"></div>
-            <nav>
-                <div class="navs">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="portfolio.html">Portfolio</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </nav>
+        <div class="headerContainer">
+            <div class="header3">
+                <img src="projectPics/209-Ridgewood.jpeg" class="headerImage" alt="We got you covered banner">
+                <a href="index.html"><img class="headerLogo" src="projectPics/sb-header.png" alt=""></a>
+                <nav class="menu2">
+                    <a class="menu__item" href="index.html"><span>Home</span></a>
+                    <a class="menu__item menu__item--current" href="about.html"><span>About</span></a>
+                    <a class="menu__item" href="portfolio.html"><span>Portfolio</span></a>
+                    <a href="contact.html" class="menu__item"><span>Contact</span></a>
+                </nav>
+                <label class="ham-menu">
+                    <input type="checkbox">
+                    <span class="menu"> 
+                        <span class="hamburger"></span>
+                    </span>
+                    <ul>
+                      <li> <a href="index.html">Home</a> </li>
+                      <li> <a href="about.html">About</a> </li>
+                      <li> <a href="portfolio.html">Portfolio</a> </li>
+                      <li> <a href="contact.html">Contact</a> </li>
+                    </ul>
+                </label>
+            </div>
         </div>
     </header>
     <section>
+        <div class="contactUs">
+            <h1>Contact Us</h1>
+        </div>
         <div class="contactFlex">
-            <div class="smallImage">
-                <img src="projectPics/209-Ridgewood.jpeg" class="contactIMG" alt="family portrait in front of their house">
-            </div>
             <div class="formFlex">
-                <br><h1>Contact Us:</h1><br><br>
                 <form action="https://formspree.io/f/mbjwaobz" method="post">
                     <div>
                         <div>
@@ -74,10 +86,10 @@
             </div>
             <div class="infoFlex">
                 <h2>Contact Info:</h2>
-                <div>Phone:201-306-2321</div><br>
+                <div>Phone: 201-306-2321</div><br>
                 <div>Email: GRPhotoHP@gmail.com</div><br>
                 <div class="bigImage">
-                    <img src="projectPics/209-Ridgewood.jpeg" class="contactIMG" alt="family portrait in front of their house">
+                    <img src="projectPics/209+Ridgewood+back.jpeg" class="contactIMG" alt="family portrait in front of their house">
                 </div>
             </div>
         </div>

@@ -1,11 +1,146 @@
+        *, *:before, *:after 
+        { box-sizing: border-box; }
+
         body {
-            font-family: 'Quicksand', sans-serif;
+            font-family: 'DM Serif Display', serif;
             margin: 0;
+            overflow-x: hidden;
         }
-        .header {
-            background-color: rgb(13, 13, 85);
+        .header3 {
+            position: relative;
+        }
+        .headerLogo {
+            position: absolute;
+            top: 5%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+        }
+        .menu2 {
+            position: absolute;
+            top: 5%;
+            right: -150px;
+            transform: translate(-50%, -50%);
+        }
+        #port-header a {
+            color: #1c3b24;
+        }
+        .headerImage {
+            max-width: 100%;
+        }
+        .headerLogo {
+            width: 25vw;
+        }
+        .menu__item {
+            font-weight: bold;
             color: #ffffff;
-            border: rgb(13, 13, 85) dashed 1px;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        .ham-menu {
+            display: none;
+        }
+        /*Hamburger Menu*/
+
+        label .menu {
+        position: absolute;
+        right: -140px;
+        top: -140px;
+        z-index: 100;
+        width: 200px;
+        height: 200px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+        }
+
+        label .hamburger {
+        position: absolute;
+        top: 135px;
+        left: 40px;
+        width: 30px;
+        height: 2px;
+        background: #1c3b24;
+        display: block;
+        transform-origin: center;
+        transition: .5s ease-in-out;
+        }
+
+        label .hamburger:after, label .hamburger:before {
+        transition: .5s ease-in-out;
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #1c3b24;
+        }
+
+        label .hamburger:before { top: -10px; }
+
+        label .hamburger:after { bottom: -10px; }
+
+        label input { display: none; }
+
+        label input:checked + .menu {
+        box-shadow: 0 0 0 20vw #FFF, 0 0 0 20vh #FFF;
+        height: 55vw;
+        border-radius: 0;
+        
+        }
+
+        label input:checked + .menu .hamburger {
+        transform: rotate(45deg);
+        
+        }
+
+        label input:checked + .menu .hamburger:after {
+        transform: rotate(90deg);
+        bottom: 0;
+        
+        }
+
+        label input:checked + .menu .hamburger:before {
+        transform: rotate(90deg);
+        top: 0;
+        
+        }
+
+        label input:checked + .menu + ul { opacity: 1; }
+
+        label ul {
+        z-index: 200;
+        position: absolute;
+        right: 200%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: .5s 0s ease-in-out;
+        font-size: 2rem;
+        list-style: none;
+        margin-top: 90px;
+        }
+
+        label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #1c3b24;
+        text-decoration: none;
+        font-size: 1rem;
+        }
+
+        .ham-menu h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        text-align: center;
+        }
+        /* OG header */
+        .header {
+            background-color:#1c3b24;
+            color: #ffffff;
             justify-content: space-between;
         }
         .logoHeader {
@@ -19,41 +154,101 @@
             max-width: 100%;
         }
         .navs {
-            background-color: rgb(13, 13, 85);
+            background-color: #1c3b24;
             display: flex;
             justify-content: flex-end;
             padding-right: 10px;
             padding-bottom: 5px;
         }
-        .navs a {
-            color: white;
+        .navs a, .menu a {
+            color: #ffffff;
             padding: 5px;
             text-decoration: none;
+        }
+        .covered {
+            color: #ffffff;
+        }
+        .welcome, .centeredText2 {
+            color: #1c3b24;
+        }
+        .centered2 {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5vw;
+            transition: ease-in;
+            transition-duration: 0.25s;
+        }
+        .centeredText2 {
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2vw;
+            transition: ease-in;
+            transition-duration: .25s;
         }
         .welcome, .covered {
             position: relative;
             text-align: center;
-            color: #ffffff;
         }
         .welcome img, .covered img {
             max-width: 100%;
         }
-        .centered2, .centered3 {
+        .centered3 {
             position: absolute;
             top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 5vw;
         }
-        .centeredText2, .centeredText3 {
+        .centeredText3 {
             position: absolute;
-            top: 65%;
+            top: 58%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 2vw;
         }
-        .centeredText2 a, .centeredText3 a {
+        .centeredText3 a {
             color: #ffffff;
+        }
+        .about-btn {
+            position: absolute;
+            top: 85%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vw;
+            height: 4vw;
+            border-radius: 30px;
+            font-size: 2vw;
+            background-color: #1c3b24;
+            border: none;
+            font-family: 'DM Serif Display', serif;
+        }
+        .about-link {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .covered-btn {
+            position: absolute;
+            top: 78%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 35vw;
+            height: 4vw;
+            border-radius: 30px;
+            font-size: 2vw;
+            background-color: #fff;
+            border: none;
+            font-family: 'DM Serif Display', serif;
+        }
+        .covered-link {
+            color: #1c3b24;
+            text-decoration: none;
+        }
+        .images1 {
+            display: block;
         }
         .images1, .images2, .leftflex, .leftflex2 {
             display: flex;
@@ -71,7 +266,7 @@
             flex-wrap: wrap;
         }
         .rightbot {
-            padding-top: 29px;
+            padding-top: 23px;
         }
         .rightbot2 {
             padding-top: 21px;
@@ -82,6 +277,39 @@
         }
         .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
             max-width: 400px;
+        }
+        @media only screen and (max-width: 500px) {
+            label .hamburger {
+                position: absolute;
+                top: 140px;
+                left: 40px;
+                width: 30px;
+                height: 2px;
+                transition: .5s ease-in-out;
+                }
+        }
+        @media only screen and (max-width: 400px) {
+            label .hamburger {
+                position: absolute;
+                top: 145px;
+                left: 40px;
+                width: 30px;
+                height: 2px;
+                transition: .5s ease-in-out;
+                }
+        }
+        @media only screen and (max-width: 800px) {
+            .menu2 {
+                display: none;
+            }
+            .ham-menu {
+                display: inline-block;
+                position: absolute;
+                top: 7%;
+                right: 2%;
+                transform: translate(-50%, -50%);
+                width: 1.5rem;
+            }
         }
         @media only screen and (max-width: 1330px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
@@ -103,7 +331,7 @@
         }
         .footertop {
             display: flex;
-            background-color: rgb(13, 13, 85);
+            background-color: #1c3b24;
             color: white;
             justify-content: space-between;
         }
@@ -118,21 +346,22 @@
             width: 150px;
         }
         .footerbot {
-            background-color: rgb(13, 13, 85);
+            background-color: #1c3b24;
             color: white;
             display: flex;
             justify-content: space-between;
         }
         .gototop {
             padding: 10px;
-            padding-left: 30px;
+            padding-left: 32px;
             padding-bottom: 20px;
         }
         .gttbutton {
             border-radius: 12px;
-            font-size: 16px;
-            color: rgb(13, 13, 85);
-            border-color: rgb(13, 13, 85);
+            width: 80px;
+            font-size: 14px;
+            color: #1c3b24;
+            border: none;
         }
         .info {
             padding: 10px;
@@ -141,10 +370,7 @@
     /* About Us Page Styles */
 
         .page2 {
-            color: rgb(13, 13, 85);
-        }
-        .nickBox {
-            padding-top: 30px;
+            color: #1c3b24;
         }
         .nick{
             font-size: 35px;
@@ -202,17 +428,26 @@
         .ourStorySection {
             clear: both;
         }
-        .aboutUs, .ourStory {
+        .ourStory {
             position: relative;
             text-align: center;
             color: white;
         }
+        .aboutUs {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            height: 150px;
+            color: #1c3b24;
+        }
+
         .centered {
             position: absolute;
-            top: 35%;
+            top: 15%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 60px;
+            font-size: 50px;
+            text-decoration: underline;
         }
         .centered4 {
             position: absolute;
@@ -251,22 +486,6 @@
                 justify-content: center;
             }
         }
-        @media only screen and (max-width: 600px) {
-            .aboutUsImage {
-                display: none;
-            }
-            .aboutUs {
-                display: flex;
-                justify-content: center;
-                font-size: 30px;
-                background-image: url(projectPics/ourHouseBanner_500x250.jpeg);
-                color: #ffffff;
-                padding: 120px;
-            }
-            .centered {
-                top: 20%;
-            }
-        }
 
     /* Porfolio Page Styles */
 
@@ -278,7 +497,7 @@
         .portTitle {
             display: block;
             font-size: 30px;
-            color: rgb(13, 13, 85);
+            color: #1c3b24;
             text-decoration: underline;
         }
         .mainflex {
@@ -334,7 +553,7 @@
         width: auto;
         padding: 16px;
         margin-top: -22px;
-        color: white;
+        color: #ffffff;
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -434,42 +653,43 @@
             max-width: 100%;
         }
         .infoFlex, .formFlex {
-            color: rgb(13, 13, 85);
+            color: #1c3b24;
             text-decoration: none;
             padding: 20px;
+        }
+        .infoFlex {
+            padding-top: 0;
+        }
+        .contactUs {
+            display: flex;
+            justify-content: center;
+            color: #1c3b24;
+            font-size: 2.5vw;
+            text-decoration: underline;
         }
         .submitBtn {
             width: 80px;
             height: 30px;
             border-radius: 20px;
             font-size: 14px;
-            background-color: rgb(13, 13, 85);
+            background-color: #1c3b24;
             color: #ffffff;
-            border-color: rgb(13, 13, 85);
+            border-color: #1c3b24;
         }
         .nameBtn {
             width: 50vw;
             display: flex;
             justify-content: space-between;
         }
+        button {
+            font-family: 'DM Serif Display', serif;
+        }
         #name2 {
             margin: 8px 5px;
-        }
-        .smallImage{
-            display: none;
         }
         @media only screen and (max-width: 1000px) {
             .contactFlex {
                 display: inline-block;
-            }
-            .smallImage {
-                padding: 20px;
-                padding-bottom: 0px;
-                display: flex;
-                justify-content: center;
-            }
-            .bigImage {
-                display: none;
             }
             #subject, #email, #message {
                 width: 100vw;

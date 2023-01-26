@@ -31,3 +31,8 @@ let slideIndex = 1;
   function image1Off() {
       document.getElementById("slide1").style.display="block"
   }
+
+  /* hamburger transition Java Script */
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
