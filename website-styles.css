@@ -165,8 +165,21 @@
             padding: 5px;
             text-decoration: none;
         }
+        .welcome {
+            height: 30vw;
+        }
         .covered {
             color: #ffffff;
+        }
+        .welcome, .covered {
+            position: relative;
+            text-align: center;
+        }
+        .welcome img, .covered img {
+            max-width: 100%;
+        }
+        .white-bkrnd {
+            display: none;
         }
         .welcome, .centeredText2 {
             color: #1c3b24;
@@ -182,19 +195,12 @@
         }
         .centeredText2 {
             position: absolute;
-            top: 46%;
+            top: 47%;
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 2vw;
             transition: ease-in;
             transition-duration: .25s;
-        }
-        .welcome, .covered {
-            position: relative;
-            text-align: center;
-        }
-        .welcome img, .covered img {
-            max-width: 100%;
         }
         .centered3 {
             position: absolute;
@@ -297,12 +303,26 @@
                 height: 2px;
                 transition: .5s ease-in-out;
                 }
-            .centered3{
-                top: 25%;
+            .welcome {
+                height: 40vw;
+            }
+            .centered2 {
+                font-size: 6vw;
+            }
+            .centered3 {
+                top: 20%;
+                font-size: 6vw;
+                width: 60vw;
+            }
+            .centeredText3, .centeredText2 {
+                top: 48%;
+                font-size: 3vw;
+                width: 70vw;
             }
             .centered4 {
                 top: 10%;
             }
+            
             .gttbutton {
                 width: 175px;
             }
