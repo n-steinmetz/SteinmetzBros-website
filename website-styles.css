@@ -304,7 +304,7 @@
                 top: 10%;
             }
             .gttbutton {
-                width: 150px;
+                width: 175px;
             }
         }
         @media only screen and (max-width: 800px) {
@@ -367,7 +367,7 @@
         }
         .gttbutton {
             border-radius: 12px;
-            width: 80px;
+            width: 100px;
             font-size: 14px;
             color: #1c3b24;
             border: none;
