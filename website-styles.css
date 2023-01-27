@@ -1,7 +1,7 @@
         *, *:before, *:after 
         { box-sizing: border-box; }
 
-        body {
+        html, body {
             font-family: 'DM Serif Display', serif;
             margin: 0;
             overflow-x: hidden;
@@ -50,7 +50,7 @@
         height: 200px;
         background: #FFF;
         border-radius: 50% 50% 50% 50%;
-        transition: .5s ease-in-out;
+        transition: .5s .4s ease-in-out;
         box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
         cursor: pointer;
         }
@@ -115,7 +115,7 @@
         right: 200%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        transition: .5s 0s ease-in-out;
+        transition: .5s 0.4s ease-in-out;
         font-size: 2rem;
         list-style: none;
         margin-top: 90px;
