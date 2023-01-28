@@ -14,6 +14,7 @@
             top: 5%;
             left: 15%;
             transform: translate(-50%, -50%);
+            width: 25vw;
         }
         .menu2 {
             position: absolute;
@@ -26,9 +27,6 @@
         }
         .headerImage {
             max-width: 100%;
-        }
-        .headerLogo {
-            width: 25vw;
         }
         .menu__item {
             font-weight: bold;
@@ -64,7 +62,7 @@
         background: #1c3b24;
         display: block;
         transform-origin: center;
-        transition: .5s ease-in-out;
+        transition: .7s .2s ease-in-out;
         }
 
         label .hamburger:after, label .hamburger:before {
@@ -148,6 +146,12 @@
             max-width: 100%;
             padding-left: 10px;
             padding-top: 10px;
+        }
+        .logo-hidden {
+            display: none;
+            margin-top: 5px;
+            margin-left: 12px;
+            width: 50vw;
         }
         .title {
             flex-wrap: wrap;
@@ -295,16 +299,24 @@
                 }
         }
         @media only screen and (max-width: 400px) {
+            .logo-hidden {
+                /* display: flex; */
+                position: relative;
+                top: -100%;
+            }
             label .hamburger {
                 position: absolute;
                 top: 145px;
                 left: 40px;
                 width: 30px;
                 height: 2px;
-                transition: .5s ease-in-out;
+                transition: .7s .2s ease-in-out;
                 }
             .welcome {
                 height: 40vw;
+            }
+            .centered {
+                width: 80vw;
             }
             .centered2 {
                 font-size: 6vw;
@@ -318,9 +330,6 @@
                 top: 48%;
                 font-size: 3vw;
                 width: 70vw;
-            }
-            .centered4 {
-                top: 10%;
             }
             
             .gttbutton {
@@ -554,6 +563,15 @@
             .row1, .row2, .row3, .row4, .row5 {
                 display: block;
             }
+            .headerLogo {
+                width: 30vw;
+                margin-left: 10px;
+                margin-top: 3px;
+            }
+            .centered4 {
+                margin-top: 15px;
+                width:  80vw;
+                }
         }
         
         /*Slideshow CSS*/
@@ -715,6 +733,9 @@
         }
         #name2 {
             margin: 8px 5px;
+        }
+        #message {
+            resize: vertical;
         }
         @media only screen and (max-width: 1000px) {
             .contactFlex {
