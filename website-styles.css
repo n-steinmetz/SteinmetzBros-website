@@ -316,7 +316,7 @@
                 height: 40vw;
             }
             .centered {
-                width: 80vw;
+                width: 100vw;
             }
             .centered2 {
                 font-size: 6vw;
@@ -324,7 +324,7 @@
             .centered3 {
                 top: 20%;
                 font-size: 6vw;
-                width: 60vw;
+                width: 100vw;
             }
             .centeredText3, .centeredText2 {
                 top: 48%;
