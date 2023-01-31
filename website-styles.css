@@ -26,6 +26,7 @@
             color: #1c3b24;
         }
         .headerImage {
+            min-width: 100vw;
             max-width: 100%;
         }
         .menu__item {
