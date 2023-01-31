@@ -442,7 +442,7 @@
             padding-left: 20px;
         }
         .nickImage img {
-            max-width: 100%;
+            max-width: 50vw;
         }
         .nickInfo {
             padding-top: 15px;
@@ -472,7 +472,7 @@
         }
         .johnImage img {
             width: 380px;
-            max-width: 100%;
+            max-width: 50vw;
         }
         .johnInfo {
             padding-top: 15px;
