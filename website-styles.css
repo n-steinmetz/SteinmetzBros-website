@@ -116,7 +116,7 @@
         transition: .5s 0.4s ease-in-out;
         font-size: 2rem;
         list-style: none;
-        margin-top: 90px;
+        margin-top: 100px;
         }
 
         label a {
@@ -228,7 +228,7 @@
             top: 85%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 40vw;
+            width: 23vw;
             height: 4vw;
             border-radius: 30px;
             font-size: 2vw;
@@ -245,7 +245,7 @@
             top: 78%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 35vw;
+            width: 20vw;
             height: 4vw;
             border-radius: 30px;
             font-size: 2vw;
@@ -322,16 +322,27 @@
                 font-size: 6vw;
             }
             .centered3 {
-                top: 20%;
+                top: 18%;
                 font-size: 6vw;
                 width: 100vw;
             }
             .centeredText3, .centeredText2 {
                 top: 48%;
-                font-size: 3vw;
+                font-size: 3.5vw;
                 width: 70vw;
             }
-            
+            .about-btn {
+                top: 92%;
+                width: 32vw;
+                height: 6vw;
+                font-size: 3vw;
+            }
+            .covered-btn {
+                top: 82%;
+                font-size: 3vw;
+                width: 30vw;
+                height: 6vw;
+            }
             .gttbutton {
                 width: 175px;
             }
@@ -391,8 +402,9 @@
         }
         .gototop {
             padding: 10px;
-            padding-left: 32px;
+            padding-left: 26px;
             padding-bottom: 20px;
+            color: #FFF;
         }
         .gttbutton {
             border-radius: 12px;
@@ -401,18 +413,24 @@
             color: #1c3b24;
             border: none;
         }
+        .email {
+            padding-right: 10px;
+        }
         .info {
             padding: 10px;
+            padding-top: 20px;
         }
 
     /* About Us Page Styles */
 
-        .page2 {
+        .page2 p {
             color: #1c3b24;
+            font-family: 'Cabin', sans-serif;
+            text-indent: 50px;
         }
         .nick{
             font-size: 35px;
-            text-decoration: underline;
+            color: #1c3b24;
         }
         .nickImage {
             float: left;
@@ -438,7 +456,7 @@
         }
         .john{
             font-size: 35px;
-            text-decoration: underline;
+            color: #1c3b24;
             justify-content: flex-end;
         }
         .johnImage {
@@ -485,7 +503,6 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 50px;
-            text-decoration: underline;
         }
         .centered4 {
             position: absolute;
@@ -498,15 +515,15 @@
             max-width: 100%;
         }
         .story {
+            position: relative;
             line-height: 2;
             font-size: 20px;
             padding: 20px;
-            padding-bottom: 60px;
-        }
-        .oLetter {
-            display: inline;
-            font-size: 50px;
-            text-decoration: underline;
+            padding-bottom: 40px;
+            padding-top: 40px;
+            text-indent: 50px;
+            font-family: 'Cabin', sans-serif;
+            color: #1c3b24;
         }
         @media only screen and (max-width: 900px) {
             .nickInfo, .johnInfo {
@@ -536,7 +553,6 @@
             display: block;
             font-size: 30px;
             color: #1c3b24;
-            text-decoration: underline;
         }
         .mainflex {
             padding: 20px;
@@ -571,7 +587,7 @@
             .centered4 {
                 margin-top: 15px;
                 width:  80vw;
-                }
+            }
         }
         
         /*Slideshow CSS*/
@@ -699,20 +715,19 @@
             justify-content: space-evenly;
             max-width: 100%;
         }
-        .infoFlex, .formFlex {
+        .formFlex {
             color: #1c3b24;
             text-decoration: none;
             padding: 20px;
         }
         .infoFlex {
-            padding-top: 0;
+            padding: 25px;
         }
         .contactUs {
             display: flex;
             justify-content: center;
             color: #1c3b24;
-            font-size: 2.5vw;
-            text-decoration: underline;
+            font-size: 3vw;
         }
         .submitBtn {
             width: 80px;
@@ -746,6 +761,9 @@
             }
             .nameBtn {
                 width: 95.5vw;
+            }
+            .bigImage img {
+                width: 100%;
             }
         }
         @media only screen and (max-width: 450px) {
