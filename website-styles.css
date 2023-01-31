@@ -173,6 +173,9 @@
         .welcome {
             height: 30vw;
         }
+        .covered img {
+            min-width: 100vw;
+        }
         .covered {
             color: #ffffff;
         }
@@ -260,6 +263,7 @@
         }
         .images1 {
             display: block;
+            min-width: 100vw;
         }
         .images1, .images2, .leftflex, .leftflex2 {
             display: flex;
@@ -334,14 +338,14 @@
             }
             .about-btn {
                 top: 92%;
-                width: 32vw;
+                width: 40vw;
                 height: 6vw;
                 font-size: 3vw;
             }
             .covered-btn {
                 top: 82%;
                 font-size: 3vw;
-                width: 30vw;
+                width: 40vw;
                 height: 6vw;
             }
             .gttbutton {
