@@ -234,7 +234,7 @@
             transform: translate(-50%, -50%);
             width: 23vw;
             height: 4vw;
-            border-radius: 30px;
+            border-radius: 50px;
             font-size: 2vw;
             background-color: #1c3b24;
             border: none;
@@ -251,7 +251,7 @@
             transform: translate(-50%, -50%);
             width: 20vw;
             height: 4vw;
-            border-radius: 30px;
+            border-radius: 50px;
             font-size: 2vw;
             background-color: #fff;
             border: none;
@@ -292,6 +292,15 @@
         }
         .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
             max-width: 400px;
+        }
+        @media only screen and (min-width: 2000px) {
+            .bigPic, .bigPic2 {
+                min-width: 65vw;
+            }
+            .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
+                padding-top: 5px;
+                min-width: 31vw;
+            }
         }
         @media only screen and (max-width: 500px) {
             label .hamburger {
@@ -712,7 +721,6 @@
             box-sizing: border-box;
         }
         .contactIMG {
-            width: 500px;
             max-width: 100%;
         }
         .contactFlex {
@@ -757,6 +765,18 @@
         #message {
             resize: vertical;
         }
+        @media only screen and (min-width: 1700px) {
+            .name, #subject, #email, #message {
+                width: 50vw;
+                height: 4.5vw;
+                font-size: 25px;
+                border-radius: 15px;
+            }
+            .formFlex {
+                font-size: 30px;
+                margin-right: 100px;
+            }
+        }
         @media only screen and (max-width: 1000px) {
             .contactFlex {
                 display: inline-block;
@@ -782,3 +802,9 @@
                 margin: 8px 0;
             }
         }
+        @media only screen and (min-width: 1000px) {
+            .infoFlex {
+                max-width: 40vw;
+            }
+        }
+        
