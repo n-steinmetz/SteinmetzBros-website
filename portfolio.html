@@ -13,6 +13,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="projectPics/favicon.ico">
     <link rel="stylesheet" href="website-styles.css">
     <script src="website-javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
     <!--
@@ -77,22 +78,41 @@
     </div>
     <div class="mainflex">
         <div class="row1">
-            <div> <img src="projectPics/IMG_1131.jpeg" alt="house_photo"></div>
-            <div><img src="projectPics/STNMTZ_20160714_02261.jpeg" alt="Photo of a house"></div>
+            <div>
+                <img data-enlargable src="projectPics/IMG_1131.jpeg" alt="house_photo">
+            </div>
+            <div>
+                <img data-enlargable src="projectPics/STNMTZ_20160714_02261.jpeg" alt="Photo of a house">
+            </div>
         </div>
         <div class="row2">
-            <div><img src="projectPics/376+Ridgewood.jpeg" alt="house_photo"></div>
-            <div><img src="projectPics/STNMTZ_20170507_2620_.jpeg" alt="Photo of a house"></div>
-            <div><img src="projectPics/DJI_0087-2.jpeg" alt="Photo of a house"></div>
+            <div>
+                <img data-enlargable src="projectPics/376+Ridgewood.jpeg" alt="house_photo">
+            </div>
+            <div>
+                <img data-enlargable src="projectPics/STNMTZ_20170507_2620_.jpeg" alt="Photo of a house">
+            </div>
+            <div>
+                <img data-enlargable src="projectPics/DJI_0087-2.jpeg" alt="Photo of a house">
+            </div>
         </div>
         <div class="row3">
-            <div><img src="projectPics/STNMTZ_20170430_114.jpeg" alt="house_photo"></div>
-            <div><img src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="house_photo"></div>
+            <div>
+                <img data-enlargable src="projectPics/STNMTZ_20170430_114.jpeg" alt="house_photo">
+            </div>
+            <div>
+                <img data-enlargable src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="house_photo">
+            </div>
         </div>
         <div class="row4">
-            <div><img src="projectPics/STNMTZ_20170506_2412_.jpeg" alt="house_photo"></div>
-            <div><img src="projectPics/IMG_1135.jpeg" alt="Photo of a house"></div>
-            <div><img src="projectPics/STNMTZ_20160525_00211.jpg" alt="Photo of a house"></div>
+            <div>
+                <img data-enlargable src="projectPics/STNMTZ_20170506_2412_.jpeg" alt="house_photo">
+            </div>
+            <div>
+                <img data-enlargable src="projectPics/IMG_1135.jpeg" alt="Photo of a house"></div>
+            <div>
+                <img data-enlargable src="projectPics/STNMTZ_20160525_00211.jpg" alt="Photo of a house">
+            </div>
         </div>
         <div class="row5">
             <div class="video-container">
@@ -101,37 +121,39 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <div><img src="projectPics/DJI_0046.jpeg" alt="Photo of a house"></div>
+            <div>
+                <img data-enlargable src="projectPics/DJI_0046.jpeg" alt="Photo of a house">
+            </div>
         </div>
     </div>
     <div class="slideshow-container">
 
         <div id="slide1" class="mySlides fade">
-          <img class="image1" src="projectPics/DJI_0130.jpeg" alt="arial view of a house" onload="image1Off();">
+          <img class="image1" data-enlargable src="projectPics/DJI_0130.jpeg" alt="arial view of a house" onload="image1Off();">
         </div>
         
         <div class="mySlides fade">
-          <img class="image2" src="projectPics/STNMTZ_20160714_02629.jpeg" alt="arial view of a house" >
+          <img class="image2" data-enlargable src="projectPics/STNMTZ_20160714_02629.jpeg" alt="arial view of a house" >
         </div>
         
         <div class="mySlides fade">
-          <img class="image3" src="projectPics/STNMTZ_20160714_02620+copy.jpeg" alt="arial view of a house">
+          <img class="image3" data-enlargable src="projectPics/STNMTZ_20160714_02620+copy.jpeg" alt="arial view of a house">
         </div>
         
         <div class="mySlides fade">
-            <img class="image4" src="projectPics/209+Ridgewood+back.jpeg" alt="arial view of a house" >
+            <img class="image4" data-enlargable src="projectPics/209+Ridgewood+back.jpeg" alt="arial view of a house" >
           </div>
         
           <div class="mySlides fade">
-            <img class="image5" src="projectPics/STNMTZ_20170430_003.jpeg" alt="arial view of a house" >
+            <img class="image5" data-enlargable src="projectPics/STNMTZ_20170430_003.jpeg" alt="arial view of a house" >
           </div>
         
           <div class="mySlides fade">
-            <img class="image6" src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="arial view of a house" >
+            <img class="image6" data-enlargable src="projectPics/Screen+Shot+2022-03-10+at+11.53.57+AM.png" alt="arial view of a house" >
           </div>
 
           <div class="mySlides fade">
-            <img class="image7" src="projectPics/428+Ridgewood.jpeg" alt="arial view of a house" >
+            <img class="image7" data-enlargable src="projectPics/428+Ridgewood.jpeg" alt="arial view of a house" >
           </div>
         
         
@@ -179,5 +201,21 @@
             <div class="email">GRPhotoHP@gamil.com</div>
         </div>
     </div>
+    <script>
+        $('img[data-enlargable]').addClass('img-enlargable').click(function(){
+            var src = $(this).attr('src');
+            $('<div>').css({
+                background: 'RGBA(0,0,0,.5) url('+src+') no-repeat center',
+                backgroundSize: 'contain',
+                width:'100%', height:'100%',
+                position:'fixed',
+                zIndex:'10000',
+                top:'0', left:'0',
+                cursor: 'zoom-out'
+            }).click(function(){
+                $(this).remove();
+            }).appendTo('body');
+        });
+    </script>
 </body>
 </html>

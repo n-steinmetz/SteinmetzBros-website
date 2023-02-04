@@ -1,6 +1,7 @@
 function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
 /*slideshow functions*/
 let slideIndex = 1;
   showSlides(slideIndex);
@@ -36,3 +37,4 @@ let slideIndex = 1;
   function myFunction(x) {
     x.classList.toggle("change");
   }
+
