@@ -290,21 +290,14 @@
             padding-top: 21px;
         }
         .bigPic, .bigPic2 {
-            width: 850px;
+            width: 63vw;
             max-width: 100%;
         }
         .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
-            max-width: 400px;
+            width: 30vw;
+            max-width: 100%;
         }
-        @media only screen and (min-width: 2000px) {
-            .bigPic, .bigPic2 {
-                min-width: 65vw;
-            }
-            .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
-                padding-top: 5px;
-                min-width: 31vw;
-            }
-        }
+
         @media only screen and (max-width: 500px) {
             label .hamburger {
                 position: absolute;
@@ -380,19 +373,27 @@
         @media only screen and (max-width: 1330px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
                 display: inline;
-                padding: 22px;
+            }
+            .bigPic, .bigPic2 {
+                width: 95vw;
+                max-width: 100%;
+            }
+            .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
+                width: 46vw;
+                max-width: 100%;
             }
         }
-        @media only screen and (max-width: 915px) {
+        @media only screen and (max-width: 1050px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
                 display: block;
                 padding-top: 10px;
             }
             .righttop img, .rightbot img, .righttop2 img, .rightbot2 img {
                 max-width: 100%;
+                width: 95vw;
             }
             .leftflex, .leftflex2 {
-                padding: 18px;
+                width: 95vw;
             }
         }
         .footertop {
@@ -531,16 +532,20 @@
         .aboutUs img, .ourStory img {
             max-width: 100%;
         }
-        .story {
-            position: relative;
+        .story-container {
+            display: flex;
+            justify-content: center;
             line-height: 2;
             font-size: 20px;
-            padding: 20px;
-            padding-bottom: 40px;
-            padding-top: 40px;
+            padding: 40px;
             text-indent: 50px;
             font-family: 'Cabin', sans-serif;
             color: #1c3b24;
+            width: 100vw;
+        }
+        .story {
+            width: 850px;
+            max-width: 100%;
         }
         @media only screen and (max-width: 900px) {
             .nickInfo, .johnInfo {
