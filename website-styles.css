@@ -272,29 +272,31 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 10px;
+            padding: 1vw;
             }
         .leftflex, .leftflex2 {
             max-width: 100%;
-            margin: 5px;
+            margin: .5vw;
+            margin-top: 0;
         }
         .righttop, .rightbot, .righttop2, .rightbot2 {
             display: flex;
-            padding: 15px;
+            padding: 1vw;
             flex-wrap: wrap;
         }
         .rightbot {
-            padding-top: 23px;
+            padding-top: 2vw;
         }
         .rightbot2 {
             padding-top: 21px;
         }
+        
         .bigPic, .bigPic2 {
             width: 63vw;
             max-width: 100%;
         }
         .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
-            width: 30vw;
+            width: 29.5vw;
             max-width: 100%;
         }
 
@@ -382,6 +384,10 @@
                 width: 46vw;
                 max-width: 100%;
             }
+            .rightflex, .rightflex2 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
         @media only screen and (max-width: 1050px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
@@ -410,6 +416,7 @@
         }
         .sblogo {
             padding: 10px;
+            margin-top: 10px;
             width: 150px;
         }
         .footerbot {
