@@ -299,6 +299,9 @@
             width: 29.5vw;
             max-width: 100%;
         }
+        .smallTop2, .smallBottom2 {
+            width: 29.8vw;
+        }
 
         @media only screen and (max-width: 500px) {
             label .hamburger {
@@ -372,27 +375,28 @@
                 width: 1.5rem;
             }
         }
-        @media only screen and (max-width: 1330px) {
+        @media only screen and (max-width: 1200px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
                 display: inline;
             }
             .bigPic, .bigPic2 {
                 width: 95vw;
                 max-width: 100%;
+                padding-bottom: 0;
+                margin-top: 10px;
             }
             .smallTop, .smallBottom, .smallTop2, .smallBottom2 {
                 width: 46vw;
                 max-width: 100%;
             }
             .rightflex, .rightflex2 {
-                margin-top: 20px;
-                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         }
-        @media only screen and (max-width: 1050px) {
+        @media only screen and (max-width: 800px) {
             .righttop, .rightbot, .righttop2, .rightbot2 {
                 display: block;
-                padding-top: 10px;
             }
             .righttop img, .rightbot img, .righttop2 img, .rightbot2 img {
                 max-width: 100%;
@@ -400,6 +404,8 @@
             }
             .leftflex, .leftflex2 {
                 width: 95vw;
+                margin: 0;
+                padding: 0;
             }
         }
         .footertop {
