@@ -218,7 +218,8 @@
             top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 5vw;
+            width: 80vw;
+            font-size: 6vw;
         }
         .centeredText3 {
             position: absolute;
@@ -249,7 +250,7 @@
         }
         .covered-btn {
             position: absolute;
-            top: 78%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 20vw;
@@ -288,7 +289,7 @@
             padding-top: 2vw;
         }
         .rightbot2 {
-            padding-top: 21px;
+            padding-top: 1.5vw;
         }
         
         .bigPic, .bigPic2 {
@@ -466,6 +467,7 @@
         .nickImage {
             float: left;
             padding-left: 20px;
+            align-items: center;
         }
         .nickImage img {
             max-width: 50vw;
@@ -504,8 +506,10 @@
             padding-top: 15px;
         }
         .johnDisc {
+            display: flex;
             line-height: 2;
             font-size: 20px;
+            align-items: center;
         }
         .john, .johnDisc {
             display: flex;
@@ -770,7 +774,7 @@
             font-size: 14px;
             background-color: #1c3b24;
             color: #ffffff;
-            border-color: #1c3b24;
+            border: none;
         }
         .nameBtn {
             width: 50vw;
@@ -800,7 +804,21 @@
             .slideshow-container {
                 max-width: 70vw;
             }
-        }
+            .johnDisc, .nickDisc {
+                font-size: 1.75rem;
+            }
+            .john, .nick {
+                font-size: 3rem;
+            }
+            .centered {
+                font-size: 5rem;
+            }
+            .nickImage img {
+                margin-top: 80px;
+            }
+            .johnImage img {
+                margin-top: 100px;
+            }
         @media only screen and (max-width: 1000px) {
             .contactFlex {
                 display: inline-block;
@@ -831,4 +849,4 @@
                 max-width: 40vw;
             }
         }
-        
+    }
