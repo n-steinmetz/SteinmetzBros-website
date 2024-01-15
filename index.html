@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="projectPics/favicon.ico">
-    <script src="website-javascript.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5dcf799f46.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -39,10 +39,17 @@
                       <li> <a href="contact.html">Contact</a> </li>
                     </ul>
                 </label>
+                <a href="#intro_content" class="scroll-arrow">
+                    <div class="arrow_div">
+                        <i class="fa-solid fa-angle-down" style="display: flex;
+                        align-items: center; margin-top: 5px;">
+                        </i>
+                    </div>
+                </a>
             </div>
         </div>
     </header>
-    <section>
+    <section id="intro_content">
         <div class="welcome-section">
             <div class="welcome">
                 <h2 class="centered2">Welcome!</h2>
@@ -136,6 +143,9 @@
             }).appendTo('body');
         });
     </script>
+    <script src="website-javascript.js"></script>
 </body>
 </html>
+
+
 

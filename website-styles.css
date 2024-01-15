@@ -304,6 +304,54 @@
             width: 29.8vw;
         }
 
+        /*.scroll-arrow {
+            position: absolute;
+            bottom: 27vh;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2em;
+            color: #1c3b24;
+            text-decoration: none;
+            animation: bounce 2s infinite;
+        } */
+
+        .scroll-arrow {
+            position: fixed;
+            left: 50%;
+            bottom: 5vh;
+            font-size: 2em;
+            color: #1c3b24;
+            animation: bounce 2s infinite;
+            text-decoration: none;
+ 
+        }
+        
+        .arrow_div {
+            display: flex;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #FFF;
+            border-radius: 50px;
+            opacity: 90%;
+        }
+
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0px);
+            }
+            40% {
+                transform: translateY(-15px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
         @media only screen and (max-width: 500px) {
             label .hamburger {
                 position: absolute;
