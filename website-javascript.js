@@ -1,3 +1,15 @@
+function topFunction() {
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+/* go to top Arrow transition */
+function topFunction() {
+  window.scrollTo({
+    top: 0, // Scroll to top of the page
+    behavior: 'smooth' // Smooth scroll
+  });
+}
+
 /* Scroll button script */
 
 /* Display only when image is larger than vw */
@@ -55,17 +67,7 @@ document.querySelector('.scroll-arrow').addEventListener('click', function (e) {
   });
 });
 
-/* go to top Arrow transition */
-function topFunction() {
-  window.scrollTo({
-    top: 0, // Scroll to top of the page
-    behavior: 'smooth' // Smooth scroll
-  });
-}
 
-function topFunction() {
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 
 /*slideshow functions*/
 

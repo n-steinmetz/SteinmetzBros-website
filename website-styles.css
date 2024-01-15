@@ -417,11 +417,12 @@
             }
             .ham-menu {
                 display: inline-block;
-                position: absolute;
-                top: 7%;
+                position: fixed;
+                top: 3%;
                 right: 2%;
                 transform: translate(-50%, -50%);
                 width: 1.5rem;
+                z-index: 99;
             }
         }
         @media only screen and (max-width: 1200px) {
@@ -838,7 +839,7 @@
         #message {
             resize: vertical;
         }
-        @media only screen and (min-width: 1700px) {
+        @media only screen and (min-width: 1500px) {
             .name, #subject, #email, #message {
                 width: 50vw;
                 height: 4.5vw;
@@ -890,11 +891,6 @@
             }
             #name2 {
                 margin: 8px 0;
-            }
-        }
-        @media only screen and (min-width: 1000px) {
-            .infoFlex {
-                max-width: 40vw;
             }
         }
     }
