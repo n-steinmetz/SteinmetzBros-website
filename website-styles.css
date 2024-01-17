@@ -1,6 +1,7 @@
         *, *:before, *:after 
         { box-sizing: border-box; }
 
+/* General tags */
         html, body {
             font-family: 'DM Serif Display', serif;
             margin: 0;
