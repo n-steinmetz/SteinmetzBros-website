@@ -314,6 +314,23 @@
             text-decoration: none;
             animation: bounce 2s infinite;
         } */
+        .scroll_txt {
+            color: #FFF;
+            opacity: 80%;
+            font-size: 1rem;
+        }
+        #index {
+            margin-left: -40px;
+        }
+        #about {
+            margin-left: -30px;
+        }
+        #portfolio {
+            margin-left: -25px;
+        }
+        #contact {
+            margin-left: -10px;
+        }
 
         .scroll-arrow {
             position: fixed;
@@ -796,6 +813,7 @@
         }
         .contactIMG {
             max-width: 100%;
+            max-height: 400px;
         }
         .contactFlex {
             display: flex;
@@ -809,6 +827,8 @@
         }
         .infoFlex {
             padding: 25px;
+            display: flex;
+            align-items: center;
         }
         .contactUs {
             display: flex;
@@ -839,7 +859,7 @@
         #message {
             resize: vertical;
         }
-        @media only screen and (min-width: 1500px) {
+        /* @media only screen and (min-width: 1500px) {
             .name, #subject, #email, #message {
                 width: 50vw;
                 height: 4.5vw;
@@ -867,8 +887,8 @@
             }
             .johnImage img {
                 margin-top: 100px;
-            }
-        @media only screen and (max-width: 1000px) {
+            } */
+        @media only screen and (max-width: 700px) {
             .contactFlex {
                 display: inline-block;
             }
@@ -881,6 +901,7 @@
             .bigImage img {
                 width: 100%;
             }
+        
         }
         @media only screen and (max-width: 450px) {
             .nameBtn {
@@ -892,5 +913,4 @@
             #name2 {
                 margin: 8px 0;
             }
-        }
     }
