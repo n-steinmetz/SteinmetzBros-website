@@ -319,18 +319,22 @@
             color: #FFF;
             opacity: 80%;
             font-size: 1rem;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #1c3b24;
+            border-radius: 10px;
         }
         #index {
-            margin-left: -40px;
+            margin-left: -55px;
         }
         #about {
-            margin-left: -30px;
+            margin-left: -40px;
         }
         #portfolio {
-            margin-left: -25px;
+            margin-left: -35px;
         }
         #contact {
-            margin-left: -10px;
+            margin-left: -20px;
         }
 
         .scroll-arrow {
@@ -429,7 +433,7 @@
                 width: 175px;
             }
         }
-        @media only screen and (max-width: 800px) {
+        @media only screen and (max-width: 600px) {
             .menu2 {
                 display: none;
             }
@@ -441,6 +445,8 @@
                 transform: translate(-50%, -50%);
                 width: 1.5rem;
                 z-index: 99;
+                border: 1px;
+                border-color: #1c3b24;
             }
         }
         @media only screen and (max-width: 1200px) {
